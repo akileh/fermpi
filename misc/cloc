@@ -1,0 +1,2 @@
+#!/bin/bash
+cloc --exclude-dir=node_modules,bower_components,public ./

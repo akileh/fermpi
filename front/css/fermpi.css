@@ -1,0 +1,31 @@
+.nav-tabs {
+    margin-bottom: 20px;
+}
+
+ul.dropdown-menu li a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn-bottom {
+    margin-bottom: 15px;
+}
+
+.table-variables {
+    border: 0 !important;
+}
+
+.table-variables th,td {
+    text-align: center;
+    border: 0;
+}
+
+.table-variables .empty {
+    border: 0px !important;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}

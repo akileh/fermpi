@@ -1,0 +1,35 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">{{ title }}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="control-label hidden js-error" for="inputError">{{ lang.not_a_number }}</label>
+                            <div class="input-group input-group-lg" id="inputError">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default js-minus" type="button">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                    </button>
+                                </span>
+                                <input type="number" class="form-control text-center js-value" value="{{ temperature }}"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default js-plus" type="button">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default js-cancel">{{ lang.cancel }}</button>
+                <button type="button" class="btn btn-primary js-save">{{ lang.save }}</button>
+            </div>
+        </div>
+    </div>
+</div>

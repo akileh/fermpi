@@ -1,0 +1,45 @@
+<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="alert alert-warning">{{lang.connectionStatus.connecting}}</div>
+
+    <div class="js-data hidden">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3 class="panel-title">Temperatures</h3></div>
+
+            <table class="table table-bordered">
+                <tr>
+                    <td class="col-xs-3">{{ lang.beer }}</td>
+                    <td class="js-beer"></td>
+                </tr>
+                <tr>
+                    <td>{{ lang.fridge }}</td>
+                    <td class="js-fridge"></td>
+                </tr>
+                <tr>
+                    <td>{{ lang.room }}</td>
+                    <td class="js-room"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3 class="panel-title">Status</h3></div>
+
+            <table class="table table-bordered">
+                <tr>
+                    <td class="col-xs-3">{{ lang.beer }}</td>
+                    <td class="js-name"></td>
+                </tr>
+                <tr>
+                    <td>{{ lang.mode }}</td>
+                    <td class="js-mode"></td>
+                </tr>
+                <tr>
+                    <td>{{ lang.status }}</td>
+                    <td class="js-status"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row js-loading"></div>

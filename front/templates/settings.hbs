@@ -1,0 +1,37 @@
+<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">{{ lang.mode}}</h3></div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span class="js-mode">{{mode}}</span>
+                <div class="js-temperatures hidden" style="display: inline-block">
+                    <button class="btn btn-default js-temperature" style="margin-left: 10px"><b>{{temperature}}</b>{{lang.degree_symbol}}</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">{{lang.change_mode}}</h3></div>
+        <div class="list-group">
+            <a href="/" class="list-group-item js-beer-constant" >{{lang.modes.beer}}</a>
+            <a href="/" class="list-group-item js-fridge-constant">{{lang.modes.fridge}}</a>
+            <a href="/" class="list-group-item js-off">{{lang.modes.off}}</a>
+        </div>
+    </div>
+
+    <div class="panel panel-default hidden js-beer">
+        <div class="panel-heading"><h3 class="panel-title">{{lang.beer}}</h3></div>
+        <div class="panel-body">
+            <form role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control js-beer-name" placeholder="{{lang.beer_name}}">
+                </div>
+                <button class="btn btn-primary col-xs-5 pull-left btn-warning hidden js-pause-beer">{{lang.pause}}</button>
+                <button class="btn btn-primary col-xs-5 pull-left btn-success hidden js-resume-beer">{{lang.resume}}</button>
+                <button class="btn btn-primary col-xs-5 pull-right btn-danger hidden js-stop-beer">{{lang.stop}}</button>
+                <button class="btn btn-primary col-xs-5 pull-right tn-success hidden js-start-beer">{{lang.start}}</button>
+            </form>
+        </div>
+    </div>
+</div>

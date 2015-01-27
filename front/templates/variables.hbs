@@ -1,0 +1,133 @@
+<div class="row text-center">
+    <h2>PID algorithm for fridge settings</h2>
+</div>
+
+<div class="row col-md-10 col-md-offset-1">
+    <table class="table table-bordered table-variables">
+        <tr>
+            <th class="warning title">Beer temp. error</th>
+            <th class="empty"></th>
+            <th class="info">Kp</th>
+            <th class="empty"></th>
+            <th class="warning">P</th>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr>
+            <td>{{beerDiff}}</td>
+            <td class="empty">*</td>
+            <td>{{Kp}}</td>
+            <td class="empty">=</td>
+            <td>{{p}}</td>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr><td class="empty"></td></tr>
+        <tr>
+            <th class="warning">Beer temp. error integral</th>
+            <th class="empty"></th>
+            <th class="info">Ki</th>
+            <th class="empty"></th>
+            <th class="warning">I</th>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr>
+            <td>{{diffIntegral}}</td>
+            <td class="empty">*</td>
+            <td>{{Ki}}</td>
+            <td class="empty">=</td>
+            <td>{{i}}</td>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr><td class="empty"></td></tr>
+        <tr>
+            <th class="warning">Beer temp. derivative</th>
+            <th class="empty"></th>
+            <th class="info">Kd</th>
+            <th class="empty"></th>
+            <th class="warning">D</th>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr>
+            <td>{{beerSlope}}</td>
+            <td class="empty">*</td>
+            <td>{{Kd}}</td>
+            <td class="empty">=</td>
+            <td>{{d}}</td>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <th class="empty" colspan="2"></th>
+            <th class="danger">Beer setting</th>
+            <th class="empty"></th>
+            <th class="warning">P+I+D</th>
+            <th class="empty"></th>
+            <th class="danger">Fridge setting</th>
+        </tr>
+        <tr>
+            <td class="empty" colspan="2"></td>
+            <td>{{beerSetting}}</td>
+            <td class="empty">+</td>
+            <td>{{pid}}</td>
+            <td class="empty">=</td>
+            <td>{{fridgeSetting}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="row text-center">
+    <h2>Predictive ON/OFF and peak detection</h2>
+</div>
+
+<div class="row col-md-10 col-md-offset-1">
+    <table class="table table-bordered table-variables">
+        <tr>
+            <th class="warning title">Estimated peak</th>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr>
+            <td>{{estPeak}}</td>
+            <td class="empty" colspan="2"></td>
+        </tr>
+        <tr><td class="empty"></td></tr>
+        <tr>
+            <th class="warning title">Last detected negative peak</th>
+            <td class="empty"></td>
+            <th class="warning title">Last target for negative peak</th>
+        </tr>
+        <tr>
+            <td>{{negPeak}}</td>
+            <td class="empty"></td>
+            <td>{{negPeakEst}}</td>
+        </tr>
+        <tr><td class="empty"></td></tr>
+        <tr>
+            <th class="warning title">Last detected positive peak</th>
+            <td class="empty"></td>
+            <th class="warning title">Last target for positive peak</th>
+        </tr>
+        <tr>
+            <td>{{posPeak}}</td>
+            <td class="empty"></td>
+            <td>{{posPeakEst}}</td>
+        </tr>
+        <tr><td class="empty"></td></tr>
+        <tr>
+            <th class="danger title">Cooling overshoot estimator</th>
+            <td class="empty"></td>
+            <th class="danger title">Heating overshoot estimator</th>
+        </tr>
+        <tr>
+            <td>{{coolEst}}</td>
+            <td class="empty"></td>
+            <td>{{heatEst}}</td>
+        </tr>
+    </table>
+</div>

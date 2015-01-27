@@ -1,0 +1,7 @@
+node_modules
+bower_components
+config/user.json
+public/dist/fermpi.debug.js
+test
+npm-debug.log
+sync-panimo.sh

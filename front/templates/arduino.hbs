@@ -1,0 +1,30 @@
+<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="panel panel-default js-arduino">
+        <div class="panel-heading"><h3 class="panel-title">{{lang.information}}</h3></div>
+        <ul class="list-group">
+            {{#each version}}
+            <li class="list-group-item">
+            {{@key}}: {{this}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="hidden js-error"></div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">{{lang.reprogram}}</h3></div>
+        <div class="panel-body">
+            <div class="js-upload-container">
+                <input class="js-file" style="display: none" type="file">
+                <button class="btn btn-primary js-upload">{{lang.upload}}</button>
+            </div>
+            <div class="js-reprogram-container hidden">
+                <span class="js-filename"></span>
+                <br/>
+                <button class="btn btn-primary js-reprogram pull-right">{{lang.reprogram}}</button>
+                <button class="btn btn-default js-cancel pull-right" style="margin-right: 10px">{{lang.cancel}}</button>
+            </div>
+        </div>
+    </div>
+</div>

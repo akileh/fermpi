@@ -1,0 +1,9 @@
+{
+    "name": "My Fermpi",
+    "port": 80,
+    "auth": {
+        "enabled": true,
+        "name": "fermpi",
+        "pass": "password"
+    }
+}

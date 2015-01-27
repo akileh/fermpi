@@ -1,0 +1,17 @@
+<label class="control-label pull-left col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2">{{name}}</label>
+<div class="col-xs-10 col-xs-offset-1 col-md-3">
+    <div class="btn-group pull-right">
+        <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="js-selected">{{valueName}}</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                {{#each values}}
+                <li><a href="/" class="js-item" data-value="{{@key}}">{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+        <button class="btn btn-primary js-save" type="button">{{lang.set}}</button>
+    </div>
+</div>
+<br/><br/>

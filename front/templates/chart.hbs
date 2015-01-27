@@ -1,0 +1,26 @@
+<form class="form-inline center-block text-center" role="form">
+    <div class="form-group">
+        <button class="btn btn-default js-from" type="button"></button>
+        <span> - </span>
+        <button class="btn btn-default js-to" type="button"></button>
+        <button class="btn btn-primary js-search" type="button" style="margin-left: 10px"><span class="glyphicon glyphicon-search"></span></button>
+    </div>
+    <div class="form-group">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="js-beer">{{beer.name}}</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                {{#each beers}}
+                <li><a href="" class="text-left js-beer-item" data-value="{{id}}">{{name}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</form>
+
+<div class="row js-loading"></div>
+
+{{! D3 chart <div class="js-chart"></div> }}
+
+<svg style="height: 500px; margin-left: -20px;"></svg>

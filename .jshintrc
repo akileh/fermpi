@@ -1,0 +1,16 @@
+{
+    "asi": true,
+    "browser": true,
+    "devel": true,
+    "evil": false,
+    "eqeqeq": true,
+    "freeze": true,
+    "indent": 4,
+    "nonbsp": true,
+    "node": true,
+    "sub": true,
+    "strict": false,
+    "trailing": true,
+    "undef": true,
+    "unused": "vars"
+}

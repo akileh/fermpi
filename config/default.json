@@ -1,0 +1,14 @@
+{
+    "name": "FermPi",
+    "device": "auto",
+    "port": 3000,
+    "live": true,
+    "logTemperatures": true,
+    "logTemperaturesInterval": 60,
+    "debug": false,
+    "auth": {
+        "enabled": false,
+        "name": "",
+        "pass": ""
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "fermpi",
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "nvd3": "~1.1.15-beta",
+    "blueimp-file-upload": "~9.8.0",
+    "bootstrap-datepicker": "~1.3.1"
+  }
+}
