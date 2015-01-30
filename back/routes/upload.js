@@ -1,6 +1,4 @@
-var app = require('../../app'),
-    path = require('path'),
-    fs = require('fs')
+var app = require('../../app')
 
 app.post('/upload', function (req, res, next) {
     var file = req.files['files[]']
