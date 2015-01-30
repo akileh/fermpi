@@ -11,25 +11,17 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     minifyCss = require('gulp-minify-css'),
     stylish = require('jshint-stylish'),
-    nodemon = require('gulp-nodemon')
+    nodemon = require('gulp-nodemon'),
+    argv = require('yargs').argv
 
 gulp.task('dev', ['server', 'watchify'])
 
 gulp.task('server', function () {
-    // parse arguments to nodemon
-    var argv = {}
-    process.argv.forEach(function (arg) {
-        var match = arg.match(/^--(.+)=(.+)/)
-        if(match)
-            argv[match[1]] = match[2]
-    })
-
     nodemon({
         script: './app.js',
         ext: 'js hbs json',
         env: _.extend({
-            NODE_ENV: 'development',
-            port: 3000
+            NODE_ENV: 'development'
         }, argv),
         watch: [
             './app.js',
