@@ -1,6 +1,9 @@
 # Fermpi
   Replacement for the Raspberry Pi part of [BrewPi](http://www.brewpi.com/).
   Needs lots of testing, but I've been running it myself for months.
+  
+## Screenshots
+![screenshot](https://raw.githubusercontent.com/akileh/fermpi/master/screenshots/thumbs.png)
 
 ## Dependencies
 * [avrdude](http://savannah.nongnu.org/projects/avrdude/)
