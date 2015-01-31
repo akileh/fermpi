@@ -79,7 +79,6 @@ module.exports = Backbone.View.extend({
         }
     },
     renderStatus: function (data) {
-        console.log(data)
         this.loading.stop()
         this.$loading.addClass('hidden')
         this.$data.removeClass('hidden')

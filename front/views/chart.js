@@ -228,7 +228,6 @@ module.exports = View.extend({
                 main.style('left', mousex + 'px' )
             })
             .on('mouseover', function(){ 
-                console.log(d3.mouse(this))
                 var mousex = d3.mouse(this);
                 mousex = mousex[0] +220 ;
                 main.style('left', mousex + 'px')

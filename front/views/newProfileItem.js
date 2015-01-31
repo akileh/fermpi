@@ -27,7 +27,6 @@ module.exports = View.extend({
         this.$type = this.$('.js-type')
     },
     temperature: function (e) {
-        console.log('temperature: ' + $(e.target).val())
         this.frame.set('temperature', $(e.target).val())
     },
     time: function (e) {
